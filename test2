@@ -1,0 +1,5 @@
+initTracking();
+s=init();
+currentAngle=readrobotJoint(s);
+
+fw = ur5fwdtrans(real2vrep(currentAngle)) * G(ROTZ(pi/2),[0 0 0])
